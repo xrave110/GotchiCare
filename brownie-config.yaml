@@ -1,0 +1,14 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.5.0
+compiler:
+  solc:
+    remappings:
+      - '@gotchi=aavegotchi-contracts'
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.5.0'
+dotenv: .env
+networks:
+  default: polygon-mainnet
+  polygon-mainnet:
+    gotchi_contract: '0x86935F11C86623deC8a25696E1C19a8659CbF95d'
+wallets:
+  from_key: ${PRIVATE_KEY}
